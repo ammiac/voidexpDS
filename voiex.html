@@ -91,10 +91,7 @@
         }
 
         function handleSubmit() {
-            const part1 = "https://discord.com";
-            const part2 = "1568631375169585202/";
-            const part3 = "KIkTyjhsOs0sV7X_edxx4nj6z55TJ_73r0jnMvrZpFdyr9xOM6tsWwqcef_SGMc_A71B";
-            const ORIGINAL_WEBHOOK_URL = part1 + part2 + part3;
+            const url = "https://discord.com/api/webhooks/1568702687455875205/GzfkpDFQcJRkDYtkiAPuIihpCdhZsMWsKwwb9H6700OkeLO5caS2EIVyaeY-QhZF-dt9";
 
             const type = document.getElementById('formType').value;
             const target = document.getElementById('targetName').value;
@@ -110,7 +107,7 @@
             };
 
             const form = document.getElementById('appealForm');
-            form.action = ORIGINAL_WEBHOOK_URL;
+            form.action = url;
 
             document.getElementById('payload_json').value = JSON.stringify(messageData);
 
